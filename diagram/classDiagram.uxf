@@ -1,1 +1,57 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>10</x><y>270</y><w>210</w><h>190</h></coordinates><panel_attributes>Animal
+--
+-String nombre
+-String especie
+-String raza
+-Cliente propietario
+-ArrayList&lt;Consulta&gt; historialConsultas
+--
++Animal(String nombre,
+ String especie, String raza, 
+Cliente propietario)
+--
++getters y setters
++void agregarConsulta
+(Consulta consulta)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>270</y><w>210</w><h>190</h></coordinates><panel_attributes>Cliente
+--
+-String nombre
+-String direccion
+-String telefono
+-ArrayList&lt;Animal&gt; listaAnimales
+--
++Cliente(String nombre, 
+String direccion, String telefono)
+--
++getters y setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Veterinaria
+--
+-ArrayList&lt;Animal&gt; listaAnimales
+-ArrayList&lt;Cliente&gt; listaClientes
+--
++Veterinaria()
+--
++getters y setters
++void agregarCliente(Cliente cliente)
++void agregarAnimal(Animal animal)
++void asignarConsulta(Animal animal, 
+Consulta consulta)
++void imprimirConsultas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>540</y><w>210</w><h>190</h></coordinates><panel_attributes>Consulta
+--
+-String fecha
+-String motivo
+-String diagnostico
+-String tratamiento
+-Veterinario veterinario
+--
++Consulta(String fecha, String motivo, 
+String diagnostico, String tratamiento,
+ Veterinario veterinario)
+--
++getters y setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>540</y><w>210</w><h>190</h></coordinates><panel_attributes>Veterinario
+--
+-String nombre
+-String especialidad
+--
++Veterinario(String nombre, String especialidad)
++Veterinario()
+--
++getters y setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>370</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>450</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>330</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>620</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>180</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;90</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>180</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;90</additional_attributes></element></diagram>
