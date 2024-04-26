@@ -12,7 +12,7 @@ Cliente propietario)
 --
 +getters y setters
 +void agregarConsulta
-(Consulta consulta)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>270</y><w>210</w><h>190</h></coordinates><panel_attributes>Cliente
+(Consulta consulta)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>270</y><w>210</w><h>150</h></coordinates><panel_attributes>Cliente
 --
 -String nombre
 -String direccion
@@ -46,7 +46,7 @@ Consulta consulta)
 String diagnostico, String tratamiento,
  Veterinario veterinario)
 --
-+getters y setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>540</y><w>210</w><h>190</h></coordinates><panel_attributes>Veterinario
++getters y setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>540</y><w>210</w><h>130</h></coordinates><panel_attributes>Veterinario
 --
 -String nombre
 -String especialidad
