@@ -1,10 +1,10 @@
 <diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>10</x><y>280</y><w>250</w><h>220</h></coordinates><panel_attributes>Animal
 --
--String nombre
--String especie
--String raza
--Cliente propietario
--ArrayList&lt;Consulta&gt; historialConsultas
+-nombre:String
+-especie:String
+-raza:String
+-propietario:Cliente
+-&lt;Consultas&gt;historialConsultas:ArrayList
 --
 +Animal(String nombre,
  String especie, String raza, 
@@ -14,10 +14,10 @@ Cliente propietario)
 +void agregarConsulta
 (Consulta consulta)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>280</y><w>310</w><h>150</h></coordinates><panel_attributes>Cliente
 --
--String nombre
--String direccion
--String telefono
--ArrayList&lt;Animal&gt; listaAnimales
+-nombre:String
+-direccion:String
+-telefono:String
+-&lt;Animal&gt; listaAnimales:ArrayList
 --
 +Cliente(String nombre, 
 String direccion, String telefono)
@@ -36,10 +36,10 @@ String direccion, String telefono)
 Consulta consulta)
 +void imprimirConsultas()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>550</y><w>240</w><h>190</h></coordinates><panel_attributes>Consulta
 --
--String fecha
--String motivo
--String diagnostico
--String tratamiento
+-fecha:String
+-motivo:String
+-diagnostico:String
+-tratamiento:String
 -Veterinario veterinario
 --
 +Consulta(String fecha, String motivo, 
@@ -48,8 +48,8 @@ String diagnostico, String tratamiento,
 --
 +getters y setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>550</y><w>300</w><h>130</h></coordinates><panel_attributes>Veterinario
 --
--String nombre
--String especialidad
+-nombre:String
+-especialidad:String
 --
 +Veterinario(String nombre, String especialidad)
 +Veterinario()
